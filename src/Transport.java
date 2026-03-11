@@ -51,8 +51,8 @@ class Car extends Transport {
 class Truck extends Transport {
     public int cargoCapacity;
 
-    public Truck(String brand, String model, int year, int cargoCapacity) {
-        super(brand, model, year);
+    public Truck(String typeOfTransport, String brand, String model, int year, int cargoCapacity) {
+        super(typeOfTransport, brand, model, year);
         this.cargoCapacity = cargoCapacity;
     }
 
@@ -78,8 +78,8 @@ class Truck extends Transport {
 class Bike extends Transport {
     public int engineVolume;
 
-    public Bike(String brand, String model, int year, int engineVolume) {
-        super(brand, model, year);
+    public Bike(String typeOfTransport, String brand, String model, int year, int engineVolume) {
+        super(typeOfTransport, brand, model, year);
         this.engineVolume = engineVolume;
     }
 
@@ -101,12 +101,11 @@ class Bike extends Transport {
 }
 
 
-
 class Bus extends Transport {
     public int passengerCapacity;
 
-    public Bus(String brand, String model, int year, int passengerCapacity) {
-        super(brand, model, year);
+    public Bus(String typeOfTransport, String brand, String model, int year, int passengerCapacity) {
+        super(typeOfTransport, brand, model, year);
         this.passengerCapacity = passengerCapacity;
     }
 
@@ -131,8 +130,8 @@ class Bus extends Transport {
 class Scooter extends Transport {
     public double speed;
 
-    public Scooter(String brand, String model, int year, double speed) {
-        super(brand, model, year);
+    public Scooter(String typeOfTransport, String brand, String model, int year, double speed) {
+        super(typeOfTransport, brand, model, year);
         this.speed = speed;
     }
 

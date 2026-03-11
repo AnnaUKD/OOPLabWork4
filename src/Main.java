@@ -2,27 +2,27 @@ class Main {
   public static void main(String[] args) {
 
 
-    Car car = new Car("Toyota", "Camry", 2021, 5);
+    Car car = new Car("Машина", "Toyota", "Camry", 2021, 5);
     car.getPassengerCount();
     car.move();
 
 
-    Truck truck = new Truck("Volvo", "FH16", 2019, 20);
+    Truck truck = new Truck("Вантажівка","Volvo", "FH16", 2019, 20);
     truck.getCargoCapacity();
     truck.move();
 
 
-    Bike bike = new Bike("Honda", "CBR", 2023, 600);
+    Bike bike = new Bike("Мотоцикл","Honda", "CBR", 2023, 600);
     bike.getEngineVolume();
     bike.move();
 
 
-    Bus bus = new Bus("Mercedes", "CBR", 2024, 200);
+    Bus bus = new Bus("Автобус","Mercedes", "CBR", 2024, 200);
     bus.getPassengerCapacity();
     bus.move();
 
 
-    Scooter scooter = new Scooter("BMW", "X8", 2015, 187.5);
+    Scooter scooter = new Scooter("Скутер","BMW", "X8", 2015, 187.5);
     scooter.getSpeed();
     scooter.move();
 
