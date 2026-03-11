@@ -1,47 +1,39 @@
 class Main {
   public static void main(String[] args) {
-    Transport[] vehicles = new Transport[3];
-
-    Car car = new Car();
-    car.brand = "Toyota";
-    car.model = "Camry";
-    car.year = 2021;
-    car.passengerCount = 5;
 
 
+    Car car = new Car("Toyota", "Camry", 2021, 5);
     car.getPassengerCount();
     car.move();
 
 
-    Truck truck = new Truck();
-    truck.brand = "Volvo";
-    truck.model = "FH16";
-    truck.year = 2019;
-    truck.cargoCapacity = 20;
-
-
+    Truck truck = new Truck("Volvo", "FH16", 2019, 20);
     truck.getCargoCapacity();
     truck.move();
 
 
-    Bike bike = new Bike();
-    bike.brand = "Honda";
-    bike.model = "CBR";
-    bike.year = 2023;
-    bike.engineVolume = 600;
-
-
+    Bike bike = new Bike("Honda", "CBR", 2023, 600);
     bike.getEngineVolume();
     bike.move();
 
 
-    vehicles[0] = car;
-    vehicles[1] = truck;
-    vehicles[2] = bike;
+    Bus bus = new Bus("Mercedes", "CBR", 2024, 200);
+    bus.getPassengerCapacity();
+    bus.move();
 
-    for (Transport t : vehicles) {
-      t.getInfo();
+
+    Scooter scooter = new Scooter("BMW", "X8", 2015, 187.5);
+    scooter.getSpeed();
+    scooter.move();
+
+
+    Transport[] vehicles = {car, truck, bike, bus, scooter};
+
+    for (Transport transporter : vehicles) {
+      System.out.println("\n");
+      transporter.getInfo();
       System.out.println("\n");
     }
+
   }
 }
